@@ -1,0 +1,102 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-soivigol-soivigol-slider {
+	padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	.glider-contain {
+		position: static;
+		overflow: hidden;
+		max-width: 100%;
+		margin: auto;
+		&.with-dots {
+			button.glider-prev,
+			i.glider-prev,
+			button.glider-next,
+			i.glider-next {
+				top: calc( 50% - 1rem - 26px );
+			}
+		}
+	}
+	.inner-container,
+	.glider-block {
+		width: max-content;
+		padding: .5rem 0;
+		&.glider {
+			width: auto;
+		}
+	}
+
+	.glider-slide {
+		min-width: unset !important;
+	}
+
+	button.glider-prev,
+	i.glider-prev,
+	button.glider-next,
+	i.glider-next {
+		font-size: 30px;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		top: calc( 50% - 1rem );
+	}
+
+	button.glider-prev svg,
+	i.glider-prev svg,
+	button.glider-next svg,
+	i.glider-next svg {
+		width: .6rem;
+		fill: darkgray;
+	}
+	button.glider-prev,
+	i.glider-prev {
+		left: -2rem;
+		svg {
+			margin-right: .2rem;
+		}
+	}
+
+	button.glider-next,
+	i.glider-next {
+		right: -2rem;
+		svg {
+			margin-left: .2rem;
+		}
+	}
+
+	.glider-next.disabled, .glider-prev.disabled {
+		opacity: .5;
+	}
+
+	.glider-dot.active {
+		background-color: darkgray;
+	}
+
+	@media ( max-width: 1024px ) {
+		button.glider-prev,
+		i.glider-prev,
+		button.glider-next,
+		i.glider-next {
+			display: block;
+		}
+	}
+
+}
+
+.wp-block-chavetas-bloques-chavetas-main-scheme-item {
+	.wp-block-chavetas-bloques-chavetas-cluster {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}

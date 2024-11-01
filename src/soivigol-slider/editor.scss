@@ -1,0 +1,100 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-soivigol-soivigol-slider {
+	overflow: hidden;
+	border: 1px solid transparent;
+	overflow-x: auto;
+	.inner-container {
+		> .block-editor-inner-blocks > .block-editor-block-list__layout {
+			width: max-content;
+			padding-bottom: 2rem;
+			padding-left: .5rem;
+			padding-right: .5rem;
+			display: flex;
+			gap: 1rem;
+		}
+		&.num-3 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 33% - 1rem );
+			}
+		}
+		&.num-4 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 25% - 1rem );
+			}
+		}
+		&.num-5 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 20% - 1rem );
+			}
+		}
+
+		&.num-6 {
+			.wp-block-soivigol-soivigol-slider-item {
+				width: calc( 16% - 1rem );
+			}
+		}
+	}
+	.block-list-appender.block-list-appender {
+		position: absolute;
+    	left: 0;
+		right: auto;
+		.soivigol-block-appender {
+			background-color: transparent;
+			border: 1px solid;
+			padding: .6rem;
+			position: relative;
+			.block-editor-button-block-appender {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				padding: 0;
+				box-shadow: unset;
+				background-color: transparent !important;
+				svg {
+					display: none;
+				}
+			}
+		}
+	}
+	&:hover{
+		border: 1px solid lightblue;
+	}
+ }
+
+ .wp-block-soivigol-soivigol-slider::-webkit-scrollbar {
+	height: 8px;
+	animation: all ease-in-out 2s;
+	z-index: 9999;
+}
+
+.wp-block-soivigol-soivigol-slider::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+.wp-block-soivigol-soivigol-slider::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	width: .1rem;
+	max-width: .1rem;
+	background-color: lightblue;
+	outline: 1px solid lightblue;
+}
+
+.block-editor-block-list__layout .wp-block-soivigol-soivigol-slider.block-editor-block-list__block:not([contenteditable]):focus:after {
+	position: relative;
+	box-shadow: unset;
+	outline: none;
+}
+
+.components-panel__row {
+	.components-range-control {
+		width: 80%;
+	}
+}
